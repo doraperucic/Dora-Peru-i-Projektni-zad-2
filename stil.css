@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "DoraPerucic Obično";
+  src: url("Font/DoraPerucicFont.ttf");
+}
+
+.naslov {
+  font-family: "DoraPerucic Obično";
+  font-size: 40px;
+}
+
+img {
+	height: 400px
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.nav li {
+  list-style: none;
+  background-color: rgba(255, 105, 180, 0.8);
+  border: 2px solid mediumorchid;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav li:active {
+  background-color: mediumorchid;
+}
+
+.nav li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.nav li a:hover {
+  color: #ffccf9;
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-image: url("Slike/PozadinskaSlika.JPEG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  color: #333;
+}
+
+.tekst {
+  background-color: rgba(255, 240, 245, 0.85);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+h1:not(.naslov) {
+	font-family: 'Pacifico', cursive;
+	font-size: 24px;
+	color: #b03060;
+	margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
